@@ -12,49 +12,74 @@ html {
   background-color: black;
   color: white;
   height: 500px;
-  max-width: 100%;
-  padding: 100px;
-  padding-left: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* grid-gap: 300px; */
-}
-
-.black-1 {
-  background-color: black;
-  color: white;
-  height: 500px;
-  max-width: 100%;
-  padding: 100px;
-  padding-right: 0px;
-  padding-left: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* grid-gap: 50px; */
+  display: flex;
+  padding: 50px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .white {
   background-color: white;
   color: black;
   height: 500px;
-  max-width: 100%;
-  padding: 100px;
-  padding-left: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* grid-gap: 100px; */
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.black-1 {
+  background-color: black;
+  color: white;
+  height: 500px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .white-insta {
   background-color: white;
   color: black;
   height: 500px;
-  max-width: 100%;
-  padding: 100px;
-  padding-left: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* grid-gap: 0px; */
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.text-col-black {
+  /* display: flex; */
+  flex-direction: column;
+  max-width: 800px;
+  min-width: 300px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+}
+
+.text-col-white {
+  /* display: flex; */
+  flex-direction: column;
+  max-width: 800px;
+  min-width: 300px;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+.img-col-phone {
+  padding-top: 200px;
+}
+
+.mario-img-col {
+  padding-top: 250px;
+}
+
+.img-col-insta {
+  padding-top: 250px;
 }
 
 .footer {
@@ -112,16 +137,6 @@ li a {
   font-size: 20px;
 }
 
-.parah {
-  max-width: 800px;
-}
-
-.text-col {
-  height: 200px;
-  padding-top: 50px;
-  padding-left: 30px;
-}
-
 .icons {
   padding-left: 25px;
   padding-right: 25px;
@@ -136,61 +151,80 @@ i:hover {
   display: none;
 }
 
-@media only screen and (max-width: 750px) {
-  .black {
-    height: 600px;
-  }
-  .img-col img {
-    height: 290px;
-    width: 290px;
-    margin-top: 50px;
-  }
-  .white {
-    height: 600px;
-  }
-  .black-1 {
-    height: 600px;
-  }
+@media only screen and (max-width: 1010px) {
   .mario-img-col img {
-    height: 450px;
-    width: 450px;
-    padding: none;
+    height: 250px;
+    width: 350px;
+  }
+  .img-col-phone img{
+    height: 400px;
+    width: 250px;
+  }
+  .text-col-black{
+    padding-bottom: 0px;
+  }
+  .mario-img-col{
+    padding-top: 0px;
   }
   .img-col-insta img {
-    height: 300px;
-    width: 300px;
+    height: 400;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .black {
+    flex-wrap: wrap;
+    height: 700px;
+  }
+  .white {
+    flex-wrap: wrap;
+    height: 700px;
+    flex-direction: column-reverse;
+  }
+  .black-1 {
+    flex-wrap: wrap;
+    height: 700px;
+  }
+  .white-insta {
+    flex-wrap: wrap;
+    height: 700px;
+    flex-direction: column-reverse;
+  }
+
+  .mario-img-col {
+    padding-top: 0;
+  }
+  .img-col-insta img {
+    height: 400px;
+    width: auto;
   }
   .img-col-phone img {
     height: 350px;
-    width: 350px;
-    margin-top: 50px;
+    width: 200px;
+  }
+  .img-col-insta {
+    padding-top: 0;
+  }
+  .img-col-phone {
+    padding-top: 0;
+  }
+  .text-col-black {
+    padding: 0px;
+  }
+  .text-col-white {
+    padding: 0px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .black {
-    display: block;
-    height: 800px;
-  }
-  .img-col {
-    margin: 100px auto;
+  .black-1 {
+    height: 700px;
   }
   .white {
-    height: 1000px;
-    display: block;
-  }
-  .img-col-phone img {
-    height: 400px;
-    width: 400px;
-    margin-top: 50px;
-  }
-  .black-1 {
     height: 800px;
-    display: block;
-    padding-right: 40px;
   }
   .white-insta {
-    display: block;
     height: 800px;
   }
   .footer {
