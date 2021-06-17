@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.black {
+  background-color: black;
+  color: white;
+  height: 500px;
+  max-width: 100%;
+  padding: 100px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 300px; */
+}
+
+.black-1 {
+  background-color: black;
+  color: white;
+  height: 500px;
+  max-width: 100%;
+  padding: 100px;
+  padding-right: 0px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 50px; */
+}
+
+.white {
+  background-color: white;
+  color: black;
+  height: 500px;
+  max-width: 100%;
+  padding: 100px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 100px; */
+}
+
+.white-insta {
+  background-color: white;
+  color: black;
+  height: 500px;
+  max-width: 100%;
+  padding: 100px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 0px; */
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 350px;
+  max-width: 100%;
+  padding: 100px;
+}
+
+.Head {
+  background-color: white;
+  padding: 7px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  float: left;
+}
+
+.Head a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  margin-top: 65.2px;
+}
+
+ul {
+  list-style-type: none;
+  margin-right: 40px;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: right;
+}
+
+ul h2 {
+  color: black;
+  border: 4px solid black;
+  padding: 8px 16px;
+  display: inline-block;
+  border-radius: 10px;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.parah {
+  max-width: 800px;
+}
+
+.text-col {
+  height: 200px;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+.icons {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+i:hover {
+  transform: scale(1.3);
+  transition: 0.1s ease-out;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .black {
+    height: 600px;
+  }
+  .img-col img {
+    height: 290px;
+    width: 290px;
+    margin-top: 50px;
+  }
+  .white {
+    height: 600px;
+  }
+  .black-1 {
+    height: 600px;
+  }
+  .mario-img-col img {
+    height: 450px;
+    width: 450px;
+    padding: none;
+  }
+  .img-col-insta img {
+    height: 300px;
+    width: 300px;
+  }
+  .img-col-phone img {
+    height: 350px;
+    width: 350px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .black {
+    display: block;
+    height: 800px;
+  }
+  .img-col {
+    margin: 100px auto;
+  }
+  .white {
+    height: 1000px;
+    display: block;
+  }
+  .img-col-phone img {
+    height: 400px;
+    width: 400px;
+    margin-top: 50px;
+  }
+  .black-1 {
+    height: 800px;
+    display: block;
+    padding-right: 40px;
+  }
+  .white-insta {
+    display: block;
+    height: 800px;
+  }
+  .footer {
+    padding: 100px 0px;
+  }
+}
