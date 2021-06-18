@@ -53,19 +53,17 @@ html {
 }
 
 .text-col-black {
-  /* display: flex; */
   flex-direction: column;
   max-width: 800px;
-  min-width: 300px;
+  min-width: 250px;
   padding-bottom: 30px;
   padding-right: 40px;
 }
 
 .text-col-white {
-  /* display: flex; */
   flex-direction: column;
   max-width: 800px;
-  min-width: 300px;
+  min-width: 250px;
   padding-top: 30px;
   padding-left: 40px;
 }
@@ -86,8 +84,9 @@ html {
   background-color: black;
   color: white;
   height: 350px;
-  max-width: 100%;
-  padding: 100px;
+  padding: 100px 0;
+  text-align: center;
+  padding: auto;
 }
 
 .Head {
@@ -156,14 +155,14 @@ i:hover {
     height: 250px;
     width: 350px;
   }
-  .img-col-phone img{
+  .img-col-phone img {
     height: 400px;
     width: 250px;
   }
-  .text-col-black{
+  .text-col-black {
     padding-bottom: 0px;
   }
-  .mario-img-col{
+  .mario-img-col {
     padding-top: 0px;
   }
   .img-col-insta img {
@@ -218,16 +217,23 @@ i:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .black {
+    height: 800px;
+  }
   .black-1 {
-    height: 700px;
+    height: 800px;
   }
   .white {
     height: 800px;
   }
   .white-insta {
-    height: 800px;
+    height: 900px;
   }
-  .footer {
-    padding: 100px 0px;
+  .icons {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .babe{
+    font-size: 30px;
   }
 }
