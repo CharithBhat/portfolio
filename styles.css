@@ -96,7 +96,6 @@ html {
   width: 100%;
   position: fixed;
   top: 0;
-  float: left;
 }
 
 .Head a:hover {
@@ -111,7 +110,6 @@ html {
 ul {
   list-style-type: none;
   margin-right: 40px;
-  padding: 0;
   overflow: hidden;
   background-color: white;
 }
@@ -146,10 +144,6 @@ i:hover {
   transition: 0.1s ease-out;
 }
 
-.topnav .icon {
-  display: none;
-}
-
 @media only screen and (max-width: 1010px) {
   .mario-img-col img {
     height: 250px;
@@ -167,7 +161,7 @@ i:hover {
   }
   .img-col-insta img {
     height: 400;
-    width: auto;
+    width: 200;
   }
 }
 
@@ -194,10 +188,6 @@ i:hover {
   .mario-img-col {
     padding-top: 0;
   }
-  .img-col-insta img {
-    height: 400px;
-    width: auto;
-  }
   .img-col-phone img {
     height: 350px;
     width: 200px;
@@ -214,6 +204,10 @@ i:hover {
   .text-col-white {
     padding: 0px;
   }
+  i:hover {
+    transform: none;
+    transition: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -224,7 +218,7 @@ i:hover {
     height: 800px;
   }
   .white {
-    height: 800px;
+    height: 850px;
   }
   .white-insta {
     height: 900px;
@@ -233,7 +227,5 @@ i:hover {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .babe{
-    font-size: 30px;
-  }
+  
 }
