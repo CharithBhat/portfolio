@@ -144,6 +144,14 @@ i:hover {
   transition: 0.1s ease-out;
 }
 
+.sidenav {
+  display: none;
+}
+
+.check {
+  display: none;
+}
+
 @media only screen and (max-width: 1010px) {
   .mario-img-col img {
     height: 250px;
@@ -212,7 +220,7 @@ i:hover {
 
 @media only screen and (max-width: 600px) {
   .black {
-    height: 800px;
+    height: 750px;
   }
   .black-1 {
     height: 800px;
@@ -227,5 +235,46 @@ i:hover {
     padding-left: 10px;
     padding-right: 10px;
   }
-  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: block;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  .Head li a {
+    display: none;
+  }
+  .check {
+    display: inline;
+    float: right;
+    margin-top: 10px;
+    margin-right: 3px;
+  }
+  ul {
+    margin-right: 0;
+  }
 }
