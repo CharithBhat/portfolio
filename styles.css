@@ -152,6 +152,10 @@ i:hover {
   display: none;
 }
 
+a{
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 1010px) {
   .mario-img-col img {
     height: 250px;
