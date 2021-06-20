@@ -72,12 +72,9 @@ html {
   flex-direction: column;
   max-width: 800px;
   min-width: 250px;
-  padding-top: 30px;
+  /* padding-top: 30px; */
+  padding-bottom: 50px;
   padding-left: 40px;
-}
-
-.img-col-phone {
-  padding-top: 200px;
 }
 
 .mario-img-col {
@@ -164,6 +161,7 @@ a{
   text-decoration: none;
 }
 
+
 @media only screen and (max-width: 1010px) {
   .mario-img-col img {
     height: 250px;
@@ -192,7 +190,7 @@ a{
   }
   .white {
     flex-wrap: wrap;
-    height: 700px;
+    height: 900px;
     flex-direction: column-reverse;
   }
   .black-1 {
@@ -217,9 +215,13 @@ a{
   }
   .img-col-phone {
     padding-top: 0;
+    padding-bottom: 0;
   }
   .text-col-black {
     padding: 0px;
+  }
+  .text-col-black-mario{
+    padding-right: 0px;
   }
   .text-col-white {
     padding: 0px;
