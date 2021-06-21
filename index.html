@@ -88,7 +88,7 @@
           <br />
           <br />
           <h3>A simple landing page built using html and css.</h3>
-          <br>
+          <br />
           <h3 class="parah">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
             recusandae quasi doloribus aperiam dolorum dignissimos expedita
@@ -113,7 +113,7 @@
           <h1>Instagram clone with flutter</h1>
           <br /><br />
           <h3>An Instagram UI clone built using flutter and dart.</h3>
-          <br>
+          <br />
           <h3>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
             soluta vitae sint sed. Corporis consequatur voluptatem quos quam
@@ -161,11 +161,32 @@
       </div>
     </div>
     <script>
-      function openNav() {
+      async function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
+        await new Promise((resolve) => setTimeout(resolve, 1));
+        sidebarOpen = true;
+        checker();
       }
       function closeNav() {
+        sidebarOpen = false;
         document.getElementById("mySidenav").style.width = "0";
+      }
+
+      function checker() {
+        // var modal = document.getElementById("mySidenav");
+        // window.onclick = function (event) {
+        //   if (event.target !== modal) {
+        //     closeNav();
+        //   }
+        // };
+
+        var modal = document.getElementById("mySidenav");
+        window.addEventListener("click", function handler(event) {
+          if (event.target !== modal) {
+            this.removeEventListener("click", handler);
+            closeNav();
+          }
+        });
       }
     </script>
   </body>
