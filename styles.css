@@ -74,6 +74,7 @@ html {
   min-width: 250px;
   padding-bottom: 50px;
   padding-left: 40px;
+  color: #333;
 }
 
 .mario-img-col {
@@ -241,7 +242,7 @@ a {
     height: 1000px;
   }
   .white-insta {
-    height: 900px;
+    height: 950px;
   }
   .icons {
     padding-left: 10px;

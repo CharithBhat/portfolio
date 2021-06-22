@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="Head">
@@ -35,7 +36,7 @@
     </div>
     <div class="main">
       <div class="black" id="about">
-        <div class="text-col-black">
+        <div class="text-col-black" data-aos="fade-right">
           <h1>About me</h1>
           <br />
           <h3>
@@ -48,7 +49,7 @@
             write about software development.
           </h3>
         </div>
-        <div class="img-col">
+        <div class="img-col" data-aos="fade-left">
           <img
             src="images/dp.jpg"
             alt=""
@@ -59,7 +60,7 @@
         </div>
       </div>
       <div class="white" id="project">
-        <div class="img-col-phone">
+        <div class="img-col-phone" data-aos="fade-left">
           <img
             src="images/phone-cropped.png"
             alt=""
@@ -67,7 +68,7 @@
             width="auto"
           />
         </div>
-        <div class="text-col-white">
+        <div class="text-col-white" data-aos="fade-right">
           <h1>My projects</h1>
           <br /><br /><br /><br />
           <h2>Reminder App</h2>
@@ -83,7 +84,7 @@
         </div>
       </div>
       <div class="black-1">
-        <div class="text-col-black-mario">
+        <div class="text-col-black-mario" data-aos="fade-right">
           <h1>Mario club Landing Page</h1>
           <br />
           <br />
@@ -96,7 +97,7 @@
             accusantium mollitia saepe quos sunt.
           </h3>
         </div>
-        <div class="mario-img-col">
+        <div class="mario-img-col" data-aos="fade-left">
           <img
             src="images/mario-cropped.png"
             alt=""
@@ -106,10 +107,10 @@
         </div>
       </div>
       <div class="white-insta">
-        <div class="img-col-insta">
+        <div class="img-col-insta" data-aos="fade-left">
           <img src="images/insta-cropped.png" alt="" height="500" width="260" />
         </div>
-        <div class="text-col-white">
+        <div class="text-col-white" data-aos="fade-right">
           <h1>Instagram clone with flutter</h1>
           <br /><br />
           <h3>An Instagram UI clone built using flutter and dart.</h3>
@@ -173,13 +174,6 @@
       }
 
       function checker() {
-        // var modal = document.getElementById("mySidenav");
-        // window.onclick = function (event) {
-        //   if (event.target !== modal) {
-        //     closeNav();
-        //   }
-        // };
-
         var modal = document.getElementById("mySidenav");
         window.addEventListener("click", function handler(event) {
           if (event.target !== modal) {
@@ -188,6 +182,15 @@
           }
         });
       }
+    </script>
+
+    <!-- aos -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
     </script>
   </body>
 </html>
