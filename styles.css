@@ -104,9 +104,16 @@ html {
   z-index: 1;
 }
 
-.Head a:hover {
-  background: #ddd;
+.Head a {
   color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.Head a:hover {
+  background: black;
+  color: white;
+  transition: 0.1s;
 }
 
 .main {
