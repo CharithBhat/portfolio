@@ -111,7 +111,7 @@ html {
 }
 
 .Head a:hover {
-  background: black;
+  background: grey;
   color: white;
   transition: 0.1s;
 }
