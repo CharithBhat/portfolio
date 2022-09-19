@@ -254,13 +254,13 @@ a {
 
 @media only screen and (max-width: 600px) {
   .black {
-    height: 750px;
+    height: 1050px;
   }
   .black-1 {
     height: 800px;
   }
   .white {
-    height: 1000px;
+    height: 1200px;
   }
   .white-insta {
     height: 950px;
