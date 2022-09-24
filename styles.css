@@ -201,12 +201,17 @@ a {
     height: 400;
     width: 200;
   }
+  .white-insta {
+    /* flex-wrap: wrap; */
+    height: 600px;
+    /* flex-direction: column-reverse; */
+  }
 }
 
 @media only screen and (max-width: 750px) {
   .black {
     flex-wrap: wrap;
-    height: 700px;
+    height: 900px;
   }
   .white {
     flex-wrap: wrap;
@@ -219,7 +224,7 @@ a {
   }
   .white-insta {
     flex-wrap: wrap;
-    height: 800px;
+    height: 900px;
     flex-direction: column-reverse;
   }
 
@@ -260,10 +265,66 @@ a {
     height: 800px;
   }
   .white {
-    height: 1200px;
+    height: 950px;
   }
   .white-insta {
-    height: 950px;
+    height: 1050px;
+  }
+  .icons {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 15px;
+    display: block;
+  }
+  .sidenav a {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    background-color: white;
+    color: black;
+  }
+  .Head li a {
+    display: none;
+  }
+  .check {
+    display: inline;
+    float: right;
+    margin-top: 10px;
+    margin-right: 3px;
+  }
+  ul {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .black {
+    height: 1050px;
+  }
+  .black-1 {
+    height: 800px;
+  }
+  .white {
+    height: 1000px;
+  }
+  .white-insta {
+    height: 1200px;
   }
   .icons {
     padding-left: 10px;
